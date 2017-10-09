@@ -40,12 +40,6 @@ public class MainActivity extends AppCompatActivity {
         appContext = getApplicationContext();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        Spinner sp = (Spinner) findViewById(R.id.spinner_load);
-        initializeDisplayContent();
-    }
-
-    private void initializeDisplayContent() {
         listView = (ListView) findViewById(R.id.listView1);
         new MainActivity.getBooks(this).execute("");
     }
